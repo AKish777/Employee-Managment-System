@@ -24,3 +24,12 @@ CREATE TABLE employee (
     manager_id INT NULL,
     PRIMARY KEY (id)
 );
+
+INSERT INTO department (name)
+VALUES ('Customer Service'), ('Programming'), ('IT');
+
+INSERT INTO role (title, salary, department_id)
+VALUES ('Customer Service', 23.00, 1), ('Customer Service Manager', 45.00, 1), ('Technician', 35.00, 2), ('Jr. Programmer', 40.00, 3), ('Intermediate Programmer', 50.00, 3), ('Senior Programmer', 60.00, 3);
+
+INSERT INTO  employee (first_name, last_name, role_id, manager_id)
+VALUES ('Homer', 'Simpson', 1, NULL), ('Marge', 'Simpson', 1, NULL), ('Peter', 'Griffin', 2, 1), ('Lois', 'Griffin', 3, 2), ('Meg', 'Griffin', 2, 3) ('Stan','Smith', 3, NULL), ('Francine', 'Smith', 3, NULL), ('Steve', 'Smith', 3, NULL);
