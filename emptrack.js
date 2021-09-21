@@ -13,3 +13,21 @@ connection.connect(function(err) {
     if (err) throw errconsole.log('connected as id' + connection.threadId)
     startPrompt();
 });
+
+connection.connect(function(err) {
+    if (err) throw errconsole.log('connected as id' + connection.threadId)
+    startPrompt();
+});
+
+function startPrompt() {
+    inquirer.prompt([
+        {
+            type: 'list',
+            message: 'Where would you like to go?',
+            name: 'choice',
+            choices: [
+                'Employees List', 'Employee Departments', 'Employees Roles', 'Employee Updates', 'Add Employee', 'Add Employee Department', 'Add Role for Employee'
+            ]
+        }
+    ])
+}
