@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS emptrack.db;
-CREATE DATABSE emptrack.db;
-USE emptrack.db
+DROP DATABASE IF EXISTS tracker_DB;
+CREATE DATABSE tracker_DB;
+USE tracker_DB;
 
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT,
@@ -35,4 +35,4 @@ INSERT INTO role (title, salary, department_id)
 VALUES ('Customer Service', 23.00, 1), ('Customer Service Manager', 45.00, 1), ('Technician', 35.00, 2), ('Jr. Programmer', 40.00, 3), ('Intermediate Programmer', 50.00, 3), ('Senior Programmer', 60.00, 3);
 
 INSERT INTO  employee (first_name, last_name, role_id, manager_id)
-VALUES ('Homer', 'Simpson', 1, NULL), ('Marge', 'Simpson', 1, NULL), ('Peter', 'Griffin', 2, 1), ('Lois', 'Griffin', 3, 2), ('Meg', 'Griffin', 2, 3) ('Stan','Smith', 3, NULL), ('Francine', 'Smith', 3, NULL), ('Steve', 'Smith', 3, NULL);
+VALUES ('Anthony','Panza', 1, NULL), ('Billy', 'Perry', 1, NULL), ('Adam', 'LZ', 1, NULL), ('TJ', 'Hunt', 2, 1), ('Stephon', 'Fung', 3, NULL), ('Sabrina', 'Leamon', 1, 2), ('Nicole', 'Zeifert', 3, NULL), ('Colette', 'Davis', 2, 3);
